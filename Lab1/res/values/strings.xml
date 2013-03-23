@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lab1</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Aleksandar_Activity">To my Activity</string>
+    <string name="title_activity_my_activity_aleksnadar">MyActivityAleksnadar</string>
+    <string name="Dodadi_Element">Dodadi Vo Lista</string>
+    <string name="Ime_Produkt">Ime Produkt</string>
+    <string name="Cena_Produkt">Cena Produkt</string>
+    <string name="Popust_Produkt">Popust %</string>
+
+</resources>
