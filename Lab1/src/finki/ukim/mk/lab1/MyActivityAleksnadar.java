@@ -27,14 +27,10 @@ public class MyActivityAleksnadar extends Activity {
 		  String text = "Korisnik so ime: "+intent.getStringExtra("ime")+" Email adresa: "+intent.getStringExtra("email")+" i Telefonski broj: "+intent.getStringExtra("telefon");
 		  TextView tx = (TextView) findViewById(R.id.txtInfoFrom);
 		  tx.setText(text);*/
-		  ArrayList<Produkt> arlp = null;
-		/*  Produkt p = new Produkt("kola",1200,25);
-		  arlp.add(p);
+		  ArrayList<Produkt> arlp = new ArrayList<Produkt>();
 		  adapter= new ListAdapterProdukt(this, arlp);
-		  
-		  lstview = (ListView) findViewById(R.id.lstProdukti);
-		  lstview.setAdapter(adapter);*/
-		 
+	      lstview = (ListView) findViewById(R.id.lstProdukti);
+		  lstview.setAdapter(adapter);
 	}
 
 	@Override

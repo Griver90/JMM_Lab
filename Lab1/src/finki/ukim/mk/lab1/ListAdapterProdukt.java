@@ -13,12 +13,12 @@ import android.widget.TextView;
 public class ListAdapterProdukt extends ArrayAdapter<Produkt>{
 	
 	private final Context context;
-	private final ArrayList<Produkt> produkt;
+	private final ArrayList<Produkt> produkt = new ArrayList<Produkt>();
 	
 	public ListAdapterProdukt(Context context, ArrayList<Produkt> produkt) {
 		super(context,R.layout.table_row_layout, produkt);
 		this.context = context;
-		this.produkt = produkt;
+		this.produkt.addAll(produkt);
 		
 	}
 	
