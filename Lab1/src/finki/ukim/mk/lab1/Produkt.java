@@ -34,4 +34,10 @@ public class Produkt {
 		public void setPopust(float popust) {
 			this.popust = popust;
 		}
+		@Override
+		public String toString() {
+			return "Produkt [ime=" + ime + ", cena=" + cena + ", popust="
+					+ popust + "]";
+		}
+		
 }

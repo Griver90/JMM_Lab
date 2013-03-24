@@ -26,11 +26,11 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
-        android:id="@+id/lblPrice"
+        android:id="@+id/lblPriceProdukt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/lblImeProdukt"
-        android:layout_marginRight="25dp"
+        android:layout_alignTop="@+id/lblImeProdukt"
+        android:layout_marginRight="18dp"
         android:layout_toLeftOf="@+id/lblImeProdukt"
         android:text="Small Text"
         android:textAppearance="?android:attr/textAppearanceSmall" />

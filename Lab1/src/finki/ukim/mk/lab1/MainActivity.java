@@ -25,9 +25,9 @@ public class MainActivity extends Activity {
     
     public void toMyActivity(View view){
     	Intent intent = new Intent(this, MyActivityAleksnadar.class);
-    	/*intent.putExtra("ime",((EditText)findViewById(R.id.txtNameSurname)).getText().toString());
+    	intent.putExtra("ime",((EditText)findViewById(R.id.txtNameSurname)).getText().toString());
     	intent.putExtra("email", ((EditText)findViewById(R.id.txtEmail)).getText().toString());
-    	intent.putExtra("telefon",((EditText)findViewById(R.id.txtPhone)).getText().toString());*/
+    	intent.putExtra("telefon",((EditText)findViewById(R.id.txtPhone)).getText().toString());
     	
     	startActivity(intent);
     }

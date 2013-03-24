@@ -23,11 +23,13 @@ public class MyActivityAleksnadar extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_aleksandar);
 		
-		  /*Intent intent = getIntent();
+		  Intent intent = getIntent();
 		  String text = "Korisnik so ime: "+intent.getStringExtra("ime")+" Email adresa: "+intent.getStringExtra("email")+" i Telefonski broj: "+intent.getStringExtra("telefon");
 		  TextView tx = (TextView) findViewById(R.id.txtInfoFrom);
-		  tx.setText(text);*/
+		  tx.setText(text);
 		  ArrayList<Produkt> arlp = new ArrayList<Produkt>();
+		  arlp.add(new Produkt("Kola",1200,50));
+		  arlp.add(new Produkt("Tocak", 200,25));
 		  adapter= new ListAdapterProdukt(this, arlp);
 	      lstview = (ListView) findViewById(R.id.lstProdukti);
 		  lstview.setAdapter(adapter);
@@ -44,9 +46,8 @@ public class MyActivityAleksnadar extends Activity {
 		
 		String ime=((EditText) findViewById(R.id.txtImeProdukt)).getText().toString() ;
 		int cena=Integer.parseInt(((EditText) findViewById(R.id.txtCenaProdukt)).getText().toString()) ;
-		float pop = Float.parseFloat(((EditText) findViewById(R.id.txtCenaProdukt)).getText().toString()) ;
+		float pop = Float.parseFloat(((EditText) findViewById(R.id.txtPopustProdukt)).getText().toString()) ;
 		Produkt p = new Produkt(ime,cena,pop);
-		
 		adapter.add(p);
 	}
 

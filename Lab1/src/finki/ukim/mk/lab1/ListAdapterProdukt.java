@@ -12,13 +12,13 @@ import android.widget.TextView;
 
 public class ListAdapterProdukt extends ArrayAdapter<Produkt>{
 	
-	private final Context context;
-	private final ArrayList<Produkt> produkt = new ArrayList<Produkt>();
+	private  Context context;
+	private  ArrayList<Produkt> produkt;
 	
 	public ListAdapterProdukt(Context context, ArrayList<Produkt> produkt) {
 		super(context,R.layout.table_row_layout, produkt);
 		this.context = context;
-		this.produkt.addAll(produkt);
+		this.produkt= produkt;
 		
 	}
 	
@@ -28,27 +28,30 @@ public class ListAdapterProdukt extends ArrayAdapter<Produkt>{
 		LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 	    View rowView = inflater.inflate(R.layout.table_row_layout, parent, false);
 	    
-	    TextView ime = (TextView) rowView.findViewById(R.id.lblIme);
-	    TextView cena = (TextView) rowView.findViewById(R.id.lblPrice);
+	    TextView ime = (TextView) rowView.findViewById(R.id.lblImeProdukt);
+	    TextView cena = (TextView) rowView.findViewById(R.id.lblPriceProdukt);
 	    ImageView img = (ImageView) rowView.findViewById(R.id.imgPopust);
 	    
-	    ime.setText(produkt.get(pozicija).getIme());
-	    cena.setText(produkt.get(pozicija).getCena());
-	    float pop = produkt.get(pozicija).getPopust();
-	    
-	    if(pop<=25)
-	    {
-	    	img.setImageResource(R.drawable.popust25);
-	    }
-	    else if (pop>50)
-	    {
-	    	img.setImageResource(R.drawable.popust75);
-	    }
-	    else 
-	    {
-	    	img.setImageResource(R.drawable.popust50);
-	    }
-	    
+	        ime.setText(produkt.get(pozicija).getIme());
+		    cena.setText(produkt.get(pozicija).getCena()+"");
+		    float pop = produkt.get(pozicija).getPopust();
+		    
+		    if(pop<=25.0)
+		    {
+		    	img.setImageResource(R.drawable.popustne);
+		    }
+		    else if (pop>=75.0)
+		    {
+		    	img.setImageResource(R.drawable.popust75);
+		    }
+		    else if (pop>=50.0)
+		    {
+		    	img.setImageResource(R.drawable.popust50);
+		    }
+		    else
+		    {
+		    	img.setImageResource(R.drawable.popust25);
+		    }
 		return rowView;
 	}
 	

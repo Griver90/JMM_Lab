@@ -25,17 +25,20 @@ public final class R {
         public static final int popust25=0x7f020001;
         public static final int popust50=0x7f020002;
         public static final int popust75=0x7f020003;
+        public static final int popustne=0x7f020004;
     }
     public static final class id {
-        public static final int action_settings=0x7f080010;
+        public static final int action_settings=0x7f080012;
         public static final int btnDodadiElement=0x7f080001;
         public static final int btnMyActivity=0x7f080009;
-        public static final int imgPopust=0x7f08000d;
+        public static final int imgPopust=0x7f08000f;
         public static final int lblCena=0x7f080003;
+        public static final int lblEmail=0x7f08000e;
         public static final int lblIme=0x7f080002;
-        public static final int lblImeProdukt=0x7f08000e;
+        public static final int lblImeProdukt=0x7f080010;
+        public static final int lblPhoneNumber=0x7f08000d;
         public static final int lblPopust=0x7f080004;
-        public static final int lblPrice=0x7f08000f;
+        public static final int lblPriceProdukt=0x7f080011;
         public static final int lstProdukti=0x7f080008;
         public static final int txtCenaProdukt=0x7f080005;
         public static final int txtEmail=0x7f08000b;
@@ -58,7 +61,10 @@ public final class R {
         public static final int Aleksandar_Activity=0x7f050003;
         public static final int Cena_Produkt=0x7f050007;
         public static final int Dodadi_Element=0x7f050005;
+        public static final int Email=0x7f05000a;
+        public static final int Ime_Korisnik=0x7f05000b;
         public static final int Ime_Produkt=0x7f050006;
+        public static final int Phone_Number=0x7f050009;
         public static final int Popust_Produkt=0x7f050008;
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;

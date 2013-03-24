@@ -81,11 +81,8 @@
         android:layout_alignBottom="@+id/txtCenaProdukt"
         android:layout_toRightOf="@+id/btnDodadiElement"
         android:ems="10"
-        android:inputType="numberDecimal" >
-
-        <requestFocus />
-    </EditText>
-
+        android:inputType="numberDecimal" />
+    
     <ListView
         android:id="@+id/lstProdukti"
         android:layout_width="match_parent"

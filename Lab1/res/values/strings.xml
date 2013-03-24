@@ -10,5 +10,8 @@
     <string name="Ime_Produkt">Ime Produkt</string>
     <string name="Cena_Produkt">Cena Produkt</string>
     <string name="Popust_Produkt">Popust %</string>
+    <string name="Phone_Number">Broj Telefon</string>
+    <string name="Email">Vnesete Email</string>
+    <string name="Ime_Korisnik">Vaseto Ime</string>
 
 </resources>
