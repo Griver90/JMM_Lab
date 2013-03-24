@@ -50,4 +50,31 @@
         android:ems="10"
         android:inputType="phone" />
 
+    <TextView
+        android:id="@+id/lblIme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNameSurname"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Ime_Korisnik"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/lblPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblIme"
+        android:layout_below="@+id/txtEmail"
+        android:text="@string/Phone_Number"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/lblEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblPhoneNumber"
+        android:layout_below="@+id/txtPhone"
+        android:text="@string/Email"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
 </RelativeLayout>
