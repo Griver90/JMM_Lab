@@ -5,6 +5,7 @@ public class Produkt {
 		private String ime;
 		private int cena;
 		private float popust;
+		private int ID;
 		
 		public Produkt() {
 			super();
@@ -34,10 +35,15 @@ public class Produkt {
 		public void setPopust(float popust) {
 			this.popust = popust;
 		}
+		public int getID() {
+			return ID;
+		}
+		public void setID(int iD) {
+			ID = iD;
+		}
 		@Override
 		public String toString() {
-			return "Produkt [ime=" + ime + ", cena=" + cena + ", popust="
-					+ popust + "]";
+			return String.format("Produkt Name: %s \n Cena: %s plus Popust %s\n", ime,cena,popust);
 		}
 		
 }

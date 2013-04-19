@@ -61,5 +61,13 @@ public class ListAdapterProdukt extends ArrayAdapter<Produkt>{
 		notifyDataSetChanged();
 	}
 	
+	public void addAll(ArrayList<Produkt> produkti)
+	{
+		this.clear();
+		for(Produkt p : produkti)
+		{
+			this.add(p);
+		}
+	}
 
 }
